@@ -3,7 +3,7 @@ const licenseChoices = require("./licenses");
 const questions = [
     {
         type: "input",
-        name: "projectTitle",
+        name: "title",
         message: "What is the title of your project?"
     },
     {
