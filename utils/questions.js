@@ -1,3 +1,5 @@
+const licenseChoices = require("./licenses");
+
 const questions = [
     {
         type: "input",
@@ -39,7 +41,7 @@ const questions = [
         type: "list",
         name: "licenses",
         message: "Select license.",
-        choices: []
+        choices: licenseChoices
     }
 ]
 
