@@ -20,11 +20,11 @@ To use this application:
 - node package manager (npm)
 
 ## Demo
-Command line prompts:
+*Command line prompts*
 
 ![Demo](./assets/images/node-index.PNG)
 
-Preview of generated markdown file:
+*Preview of generated markdown file*
 
 ![readme](./assets/images/readme.PNG)
 
