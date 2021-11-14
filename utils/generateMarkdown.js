@@ -71,7 +71,7 @@ function generateMarkdown(data) {
   ${data.instructions}
   ## Questions <a name="questions"></a>
   If you have questions about this application, reach out on GitHub or send an email to address below.  
-  - [GitHub Profile](github.com/${data.github})
+  - [GitHub Profile](https://github.com/${data.github})
   - ${data.email}
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
