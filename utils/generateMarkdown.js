@@ -64,8 +64,8 @@ function generateMarkdown(data) {
   ${data.instructions}
   ## Questions? <a name="questions"></a>
   Reach out on GitHub or send an email. 
-  - GitHub: github.com/${data.github}
-  - Email: ${data.email}
+  - [GitHub Profile](github.com/${data.github})
+  - ${data.email}
   
 `;
 }
