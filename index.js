@@ -8,7 +8,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const inquirerQuestions = require("./utils/questions");
-const questions = require("./utils/questions");
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
@@ -19,7 +18,7 @@ function init() {
         .then(answers => {
             console.log(answers);
 
-            const generatedText = generateMarkdown(questions);
+            const generatedText = generateMarkdown(answers);
 
             fs.writeFile(path.join("./", "dist", "README.md"), generatedText,
             (err) => {
