@@ -41,7 +41,14 @@ const questions = [
         type: "list",
         name: "license",
         message: "Select license.",
-        choices: licenseChoices
+        choices: licenseChoices,
+        when: ({ confirmLicense }) => {
+            if (confirmLicense) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     },
     {
         type: "input",
