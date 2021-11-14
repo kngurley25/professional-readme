@@ -22,7 +22,25 @@ const questions = [
             if (descInput) {
                 return true;
             } else {
-                console.log("Please enter a description.");
+                console.log("Please enter a project description.");
+                return false;
+            }
+        }
+    },
+    {
+        type: "confirm",
+        name: "confirmDeployment",
+        message: "Would you like to include a link to your deployed application?",
+        default: false
+    },
+    {
+        type: "input",
+        name: "deployment",
+        message: "Provide a link to your deployed application.",
+        when: ({confirmDeployment}) => {
+            if (confirmDeployment) {
+                return true;
+            } else {
                 return false;
             }
         }
@@ -30,7 +48,7 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "Provide installation instructions for your project.",
+        message: "Provide instructions on how to install your project.",
     },
     {
         type: "input",

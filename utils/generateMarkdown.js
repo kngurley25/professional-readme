@@ -38,13 +38,22 @@ function renderLicenseToC(license) {
   }
 }
 
+function renderDeploymentLink(deployment) {
+  if (deployment) {
+    return `${deployment}`;
+  } else {
+    return ``;
+  }
+} 
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   ${renderLicenseBadge(data.license)}
   # ${data.title}
   ## Description
-  ${data.description}
+  ${data.description}  
+  ${renderDeploymentLink(data.deployment)}
   ## Table of Contents
   1. [Installation](#installation)
   1. [Usage](#usage)
