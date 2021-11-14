@@ -2,7 +2,7 @@
   ![badge](https://img.shields.io/badge/License-MIT-brightgreen)
   # Demo Project Title
   ## Description
-  A short description of your project here.  
+  Add a short project description here.  
   https://kngurley25.github.io/demo-project
   ## Table of Contents
   1. [Installation](#installation)
@@ -12,13 +12,13 @@
   1. [Reach Out](#questions)
   1. [License](#license)
   ## Installation <a name="installation"></a>
-  Notes on installation instructions
+  Describe how to install your project
   ## Usage <a name="usage"></a>
-  Notes on how to use app
+  Describe how to use your project
   ## Contributing <a name="contributing"></a>
-  Notes on contributions
+  Add notes on how to contribute here. 
   ## Tests <a name="tests"></a>
-  Notes on testing methods
+  Add notes on testing methods here.
   ## Questions <a name="questions"></a>
   If you have questions about this application, reach out on GitHub or send an email to address below.  
   - [My GitHub Profile](https://github.com/kngurley25)

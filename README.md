@@ -30,5 +30,5 @@ To use this application:
 
 
 ## Questions
-Reach out to me on GitHub or contact me by email address. 
+Reach out to me on GitHub or contact me by email address.  
 [GitHub Profile](https://github.com/kngurley25)
