@@ -1,9 +1,9 @@
 
   ![badge](https://img.shields.io/badge/License-MIT-brightgreen)
-  # Demo Project Title
+  # Weather Dashboard
   ## Description
-  Add a short project description here.  
-  https://kngurley25.github.io/demo-project
+  An application in which a user can search by city to view current weather and five day forecast.  
+  https://kngurley25.github.io/weather-dashboard/
   ## Table of Contents
   1. [Installation](#installation)
   1. [Usage](#usage)
@@ -12,13 +12,13 @@
   1. [Reach Out](#questions)
   1. [License](#license)
   ## Installation <a name="installation"></a>
-  Describe how to install your project
+  Clone the repository and run on a browser. 
   ## Usage <a name="usage"></a>
-  Describe how to use your project
+  A user can search for a city by name using the input field to pull up weather data. A user may also view saved searches and pull up viewed information for that city. 
   ## Contributing <a name="contributing"></a>
-  Add notes on how to contribute here. 
+  Please contact me directly if you wish to make contributions. 
   ## Tests <a name="tests"></a>
-  Add notes on testing methods here.
+  Testing methods include running application by powered by javascript through web browser. 
   ## Questions <a name="questions"></a>
   If you have questions about this application, reach out on GitHub or send an email to address below.  
   - [My GitHub Profile](https://github.com/kngurley25)

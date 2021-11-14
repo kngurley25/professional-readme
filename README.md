@@ -14,6 +14,9 @@ To use this application:
 1. Answer command line prompts
 1. View README.md generated in ./dist directory
 
+View this walk-through on how to use the professional-readme application. 
+[Demo Video](https://watch.screencastify.com/v/oI1F4ET2Ai1VPf89MNb7)
+
 ## Technologies
 - JavaScript
 - node.js
@@ -32,3 +35,4 @@ To use this application:
 ## Questions
 Reach out to me on GitHub or contact me by email address.  
 [GitHub Profile](https://github.com/kngurley25)
+kngurley25@gmail.com
