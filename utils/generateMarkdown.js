@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
-    return `![badge](https://img.shields.io/badge/LICENSE-${license.split("-",1)}-brightgreen)`;
+    return `![badge](https://img.shields.io/badge/LICENSE-${license.split("-")[0]}-brightgreen)`;
   } else {
     return ``;
   }
@@ -12,7 +12,8 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license) {
-    return `https://opensource.org/licenses/${license}`;
+    return `This application is is covered under ${license}. Refer to the link below for additional information.
+    https://opensource.org/licenses/${license}`;
   } else {
     return ``;
   }
@@ -22,8 +23,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `## License
-This application is is covered under ${license}. Refer to the link below for additional information.`;
+    return `## License <a name="License"></a>`;
   } else {
     return ``;
   }
@@ -37,17 +37,23 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Table of Contents
-  ## Installation
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [${renderLicenseSection(data.license).split(" ")[1]}](#${renderLicenseSection(data.license).split(" ")[1]})
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Reach Out](#questions)
+  ## Installation <a name="installation"></a>
   ${data.installation}
-  ## Usage
+  ## Usage <a name="usage"></a>
   ${data.usage}
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
-  ## Contributing
+  ## Contributing <a name="contributing"></a>
   ${data.contribution}
-  ## Tests
+  ## Tests <a name="tests"></a>
   ${data.instructions}
-  ## Questions?
+  ## Questions? <a name="questions"></a>
   Reach out on GitHub or send an email. 
   - GitHub: github.com/${data.github}
   - Email: ${data.email}
