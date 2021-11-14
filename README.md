@@ -19,6 +19,9 @@ To use this application:
 - node.js
 - node package manager (npm)
 
+## Demo
+![Demo](./assets/images/node-index.PNG)
+
 ## Questions
 Reach out to me on GitHub or contact me by email address. 
 [GitHub Profile](https://github.com/kngurley25)
