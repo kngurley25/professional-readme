@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
-    return `![badge](https://img.shields.io/badge/LICENSE-${license.split("-")[0]}-brightgreen)`;
+    return `![badge](https://img.shields.io/badge/License-${license.split("-")[0]}-brightgreen)`;
   } else {
     return ``;
   }
@@ -13,8 +13,8 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license) {
     return `This application is is covered under ${license}.  
-    Refer to the link below for additional information.  
-    https://opensource.org/licenses/${license}`;
+      Refer to the link below for additional information.  
+      https://opensource.org/licenses/${license}`;
   } else {
     return ``;
   }
@@ -57,24 +57,24 @@ function generateMarkdown(data) {
   ## Table of Contents
   1. [Installation](#installation)
   1. [Usage](#usage)
-  ${renderLicenseToC(data.license)}
   1. [Contributing](#contributing)
   1. [Tests](#tests)
   1. [Reach Out](#questions)
+  ${renderLicenseToC(data.license)}
   ## Installation <a name="installation"></a>
   ${data.installation}
   ## Usage <a name="usage"></a>
   ${data.usage}
-  ${renderLicenseSection(data.license)}
-  ${renderLicenseLink(data.license)}
   ## Contributing <a name="contributing"></a>
   ${data.contribution}
   ## Tests <a name="tests"></a>
   ${data.instructions}
-  ## Questions? <a name="questions"></a>
-  Reach out on GitHub or send an email. 
+  ## Questions <a name="questions"></a>
+  If you have questions about this application, reach out on GitHub or send an email to address below.  
   - [GitHub Profile](github.com/${data.github})
   - ${data.email}
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
   
 `;
 }

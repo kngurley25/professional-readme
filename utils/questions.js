@@ -53,7 +53,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "Provide usage information for your project."
+        message: "Provide instructions on how someone may use your application after installation."
     },
     {
         type: "input",
@@ -63,7 +63,7 @@ const questions = [
     {
         type: "input",
         name: "instructions",
-        message: "Provide test instructions for your project."
+        message: "Provide explanation of testing methods for your project."
     },
     {
         type: "confirm",
