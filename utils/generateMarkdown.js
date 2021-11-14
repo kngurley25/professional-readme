@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
-    return `![badge](https://img.shields.io/badge/LICENSE-${license}-brightgreen)`;
+    return `![badge](https://img.shields.io/badge/LICENSE-${license.split("-",1)}-brightgreen)`;
   } else {
     return ``;
   }
@@ -10,11 +10,24 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license) {
+    return `https://opensource.org/licenses/${license}`;
+  } else {
+    return ``;
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license) {
+    return `## License
+This application is is covered under ${license}. Refer to the link below for additional information.`;
+  } else {
+    return ``;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -28,12 +41,14 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
   ## Contributing
   ${data.contribution}
   ## Tests
   ${data.instructions}
   ## Questions?
-  Reach out to me on GitHub or email me directly. 
+  Reach out on GitHub or send an email. 
   - GitHub: github.com/${data.github}
   - Email: ${data.email}
   
