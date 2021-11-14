@@ -4,12 +4,12 @@
   ## Description
   
   ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
+  1. [Installation](#installation)
+  1. [Usage](#usage)
   
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Reach Out](#questions)
+  1. [Contributing](#contributing)
+  1. [Tests](#tests)
+  1. [Reach Out](#questions)
   ## Installation <a name="installation"></a>
   
   ## Usage <a name="usage"></a>

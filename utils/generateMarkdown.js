@@ -12,7 +12,8 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license) {
-    return `This application is is covered under ${license}.  Refer to the link below for additional information.  
+    return `This application is is covered under ${license}.  
+    Refer to the link below for additional information.  
     https://opensource.org/licenses/${license}`;
   } else {
     return ``;
@@ -31,7 +32,7 @@ function renderLicenseSection(license) {
 
 function renderLicenseToC(license) {
   if (license) {
-    return `- [License](#license)`;
+    return `1. [License](#license)`;
   } else {
     return ``;
   }
@@ -45,12 +46,12 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
+  1. [Installation](#installation)
+  1. [Usage](#usage)
   ${renderLicenseToC(data.license)}
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Reach Out](#questions)
+  1. [Contributing](#contributing)
+  1. [Tests](#tests)
+  1. [Reach Out](#questions)
   ## Installation <a name="installation"></a>
   ${data.installation}
   ## Usage <a name="usage"></a>
