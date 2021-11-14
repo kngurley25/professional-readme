@@ -20,7 +20,14 @@ To use this application:
 - node package manager (npm)
 
 ## Demo
+Command line prompts:
+
 ![Demo](./assets/images/node-index.PNG)
+
+Preview of generated markdown file:
+
+![readme](./assets/images/readme.PNG)
+
 
 ## Questions
 Reach out to me on GitHub or contact me by email address. 
